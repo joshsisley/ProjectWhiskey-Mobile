@@ -5,7 +5,10 @@ angular.module('whiskyMobile').controller('registerController', function($scope)
     $scope.submitRegistration = function() {
         Accounts.createUser({
             email: $scope.registerEmail,
-            password: $scope.registerPassword
+            password: $scope.registerPassword,
+            profile: {
+                userType: 'mobile'
+            }
         });
         console.log(Meteor.users.find().fetch());
     };

@@ -1,8 +1,8 @@
 <div ng-controller="registerController">
     <h2>Register</h2>
     <form class="register">
-        <p>Email: <input type="email" name="email" ng-model="registerEmail"></p>
-        <p>Password: <input type="password" name="password" ng-model="registerPassword"></p>
-        <p><button type="button" ng-click="submitRegistration()">Submit</button></p>
+        <input type="email" name="email" placeholder="Email" ng-model="registerEmail" />
+        <input type="password" name="password" placeholder="password" ng-model="registerPassword" />
+        <button type="button" ng-click="submitRegistration()">Submit</button>
     </form>
 </div>
